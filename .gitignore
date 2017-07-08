@@ -48,3 +48,9 @@ Temporary Items
 
 # For now, let's ignore all the PIC32 code
 SUPL_PIC32.X
+SUPL_PIC16.X/eeprom.c
+SUPL_PIC16.X/eeprom.h
+SUPL_PIC16.X/gyro.c
+SUPL_PIC16.X/gyro.h
+SUPL_PIC16.X/rtc.c
+SUPL_PIC16.X/rtc.h
