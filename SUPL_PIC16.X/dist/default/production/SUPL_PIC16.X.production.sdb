@@ -1,0 +1,393 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16LF1719 ]
+[d frameptr 6 ]
+"9 C:\Users\swg\MPLABXProjects\SUPLoriginalish\SUPL_PIC16.X\adc.c
+[v _setupADC setupADC `(v  1 e 1 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.36\sources\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.36\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.36\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.36\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.36\sources\common\memset.c
+[v _memset memset `(*.39v  1 e 1 0 ]
+[v i1_memset memset `(*.1v  1 e 1 0 ]
+"33 C:\Program Files (x86)\Microchip\xc8\v1.36\sources\common\strcmp.c
+[v _strcmp strcmp `(i  1 e 2 0 ]
+"21 C:\Users\swg\MPLABXProjects\SUPLoriginalish\SUPL_PIC16.X\eeprom.c
+[v _writeEEPROMbyte writeEEPROMbyte `(uc  1 e 1 0 ]
+"10 C:\Users\swg\MPLABXProjects\SUPLoriginalish\SUPL_PIC16.X\i2c.c
+[v _setupI2C setupI2C `(v  1 e 1 0 ]
+"28
+[v _writeI2Cstring writeI2Cstring `(uc  1 e 1 0 ]
+"50
+[v _readI2C readI2C `(uc  1 e 1 0 ]
+"97
+[v _i2cStart i2cStart `(v  1 e 1 0 ]
+"103
+[v _i2cRestart i2cRestart `(v  1 e 1 0 ]
+"109
+[v _i2cStop i2cStop `(v  1 e 1 0 ]
+"115
+[v _i2cWrite i2cWrite `(uc  1 e 1 0 ]
+"125
+[v _i2cNack i2cNack `(v  1 e 1 0 ]
+"12 C:\Users\swg\MPLABXProjects\SUPLoriginalish\SUPL_PIC16.X\interrupt.c
+[v _setupSysInterrupts setupSysInterrupts `(v  1 e 1 0 ]
+"17
+[v _ISR ISR `II(v  1 e 1 0 ]
+"42
+[v _timer0ISR timer0ISR `(v  1 e 1 0 ]
+"64
+[v _uartISR uartISR `(v  1 e 1 0 ]
+"22 C:\Users\swg\MPLABXProjects\SUPLoriginalish\SUPL_PIC16.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"25 C:\Users\swg\MPLABXProjects\SUPLoriginalish\SUPL_PIC16.X\pwm.c
+[v _setupPWM setupPWM `(v  1 e 1 0 ]
+"80
+[v _pwm_interrupt_manager pwm_interrupt_manager `(v  1 e 1 0 ]
+"10 C:\Users\swg\MPLABXProjects\SUPLoriginalish\SUPL_PIC16.X\spi.c
+[v _setupSPI setupSPI `(v  1 e 1 0 ]
+"22 C:\Users\swg\MPLABXProjects\SUPLoriginalish\SUPL_PIC16.X\system.c
+[v _setupGPIO setupGPIO `(v  1 e 1 0 ]
+"62
+[v _setupTimer1 setupTimer1 `(v  1 e 1 0 ]
+"84
+[v _delayms delayms `(v  1 e 1 0 ]
+"105
+[v _delayus delayus `(v  1 e 1 0 ]
+"25 C:\Users\swg\MPLABXProjects\SUPLoriginalish\SUPL_PIC16.X\uart.c
+[v _setupUART setupUART `(v  1 e 1 0 ]
+"53
+[v _sendUARTbyte sendUARTbyte `(v  1 e 1 0 ]
+"68
+[v _clearUARTbuffer clearUARTbuffer `(v  1 e 1 0 ]
+"100
+[v _sendUARTstring sendUARTstring `(v  1 e 1 0 ]
+[s S434 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"360 C:\Program Files (x86)\Microchip\xc8\v1.36\include\pic16lf1719.h
+[s S443 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S448 . 1 `S434 1 . 1 0 `S443 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES448  1 e 1 @11 ]
+"414
+[v _PORTA PORTA `VEuc  1 e 1 @12 ]
+"475
+[v _PORTB PORTB `VEuc  1 e 1 @13 ]
+"536
+[v _PORTC PORTC `VEuc  1 e 1 @14 ]
+"597
+[v _PORTD PORTD `VEuc  1 e 1 @15 ]
+"658
+[v _PORTE PORTE `VEuc  1 e 1 @16 ]
+"886
+[v _TMR1 TMR1 `VEus  1 e 2 @22 ]
+[s S135 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 T1OSCEN 1 0 :1:3 
+`uc 1 T1CKPS 1 0 :2:4 
+`uc 1 TMR1CS 1 0 :2:6 
+]
+"952
+[s S142 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+`uc 1 TMR1CS0 1 0 :1:6 
+`uc 1 TMR1CS1 1 0 :1:7 
+]
+[u S148 . 1 `S135 1 . 1 0 `S142 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES148  1 e 1 @24 ]
+"1178
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1239
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+"1300
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+"1361
+[v _TRISD TRISD `VEuc  1 e 1 @143 ]
+"1422
+[v _TRISE TRISE `VEuc  1 e 1 @144 ]
+"2238
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+"2299
+[v _LATB LATB `VEuc  1 e 1 @269 ]
+"2360
+[v _LATC LATC `VEuc  1 e 1 @270 ]
+"2421
+[v _LATD LATD `VEuc  1 e 1 @271 ]
+"2482
+[v _LATE LATE `VEuc  1 e 1 @272 ]
+"3735
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"3784
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+"3833
+[v _ANSELC ANSELC `VEuc  1 e 1 @398 ]
+"3883
+[v _ANSELD ANSELD `VEuc  1 e 1 @399 ]
+"3944
+[v _ANSELE ANSELE `VEuc  1 e 1 @400 ]
+"4137
+[v _RC1REG RC1REG `VEuc  1 e 1 @409 ]
+"4199
+[v _TXREG TXREG `VEuc  1 e 1 @410 ]
+"4254
+[v _SPBRG SPBRG `VEuc  1 e 1 @411 ]
+[s S227 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"4506
+[u S236 . 1 `S227 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES236  1 e 1 @413 ]
+[s S206 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"4685
+[u S215 . 1 `S206 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES215  1 e 1 @414 ]
+[s S185 . 1 `uc 1 ABDEN 1 0 :1:0 
+`uc 1 WUE 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 BRG16 1 0 :1:3 
+`uc 1 SCKP 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 RCIDL 1 0 :1:6 
+`uc 1 ABDOVF 1 0 :1:7 
+]
+"4896
+[u S194 . 1 `S185 1 . 1 0 ]
+[v _BAUDCONbits BAUDCONbits `VES194  1 e 1 @415 ]
+"4974
+[v _WPUA WPUA `VEuc  1 e 1 @524 ]
+"5035
+[v _WPUB WPUB `VEuc  1 e 1 @525 ]
+"5096
+[v _WPUC WPUC `VEuc  1 e 1 @526 ]
+"5157
+[v _WPUD WPUD `VEuc  1 e 1 @527 ]
+"5218
+[v _WPUE WPUE `VEuc  1 e 1 @528 ]
+"5255
+[v _SSP1BUF SSP1BUF `VEuc  1 e 1 @529 ]
+"5508
+[v _SSP1ADD SSP1ADD `VEuc  1 e 1 @530 ]
+[s S364 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+"6036
+[u S373 . 1 `S364 1 . 1 0 ]
+[v _SSP1STATbits SSP1STATbits `VES373  1 e 1 @532 ]
+[s S298 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"6168
+[s S304 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[u S309 . 1 `S298 1 . 1 0 `S304 1 . 1 0 ]
+[v _SSP1CON1bits SSP1CON1bits `VES309  1 e 1 @533 ]
+[s S343 . 1 `uc 1 SEN 1 0 :1:0 
+`uc 1 RSEN 1 0 :1:1 
+`uc 1 PEN 1 0 :1:2 
+`uc 1 RCEN 1 0 :1:3 
+`uc 1 ACKEN 1 0 :1:4 
+`uc 1 ACKDT 1 0 :1:5 
+`uc 1 ACKSTAT 1 0 :1:6 
+`uc 1 GCEN 1 0 :1:7 
+]
+"6426
+[u S352 . 1 `S343 1 . 1 0 ]
+[v _SSP1CON2bits SSP1CON2bits `VES352  1 e 1 @534 ]
+"6646
+[v _ODCONA ODCONA `VEuc  1 e 1 @652 ]
+"6707
+[v _ODCONB ODCONB `VEuc  1 e 1 @653 ]
+"6768
+[v _ODCONC ODCONC `VEuc  1 e 1 @654 ]
+"6829
+[v _ODCOND ODCOND `VEuc  1 e 1 @655 ]
+"6890
+[v _ODCONE ODCONE `VEuc  1 e 1 @656 ]
+"15990
+[v _BRGH BRGH `VEb  1 e 0 @3314 ]
+"17696
+[v _RCIE RCIE `VEb  1 e 0 @1165 ]
+"17698
+[v _RCIF RCIF `VEb  1 e 0 @141 ]
+"17982
+[v _TMR0IE TMR0IE `VEb  1 e 0 @93 ]
+"17984
+[v _TMR0IF TMR0IF `VEb  1 e 0 @90 ]
+"18102
+[v _TRMT TRMT `VEb  1 e 0 @3313 ]
+"18132
+[v _WCOL WCOL `VEb  1 e 0 @4271 ]
+"14 C:\Users\swg\MPLABXProjects\SUPLoriginalish\SUPL_PIC16.X\pwm.c
+[v _PWM_ENABLE PWM_ENABLE `uc  1 e 1 0 ]
+"15
+[v _duty duty `[5][8]uc  1 e 40 0 ]
+"16
+[v _duty_en duty_en `[5][8]uc  1 e 40 0 ]
+"12 C:\Users\swg\MPLABXProjects\SUPLoriginalish\SUPL_PIC16.X\system.c
+[v _SYSTEM_TIMER SYSTEM_TIMER `ul  1 e 4 0 ]
+"11 C:\Users\swg\MPLABXProjects\SUPLoriginalish\SUPL_PIC16.X\uart.c
+[v _uartbuf uartbuf `[65]uc  1 e 65 0 ]
+"12
+[v _uartptr uartptr `*.1uc  1 e 1 0 ]
+"22 C:\Users\swg\MPLABXProjects\SUPLoriginalish\SUPL_PIC16.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"52
+} 0
+"25 C:\Users\swg\MPLABXProjects\SUPLoriginalish\SUPL_PIC16.X\uart.c
+[v _setupUART setupUART `(v  1 e 1 0 ]
+{
+"29
+[v setupUART@brg brg `ul  1 a 4 34 ]
+"25
+[v setupUART@baud baud `ui  1 p 2 28 ]
+"43
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.36\sources\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+{
+"11
+[v ___aldiv@quotient quotient `l  1 a 4 24 ]
+"12
+[v ___aldiv@sign sign `uc  1 a 1 23 ]
+[v ___aldiv@counter counter `uc  1 a 1 22 ]
+"6
+[v ___aldiv@divisor divisor `l  1 p 4 13 ]
+[v ___aldiv@dividend dividend `l  1 p 4 17 ]
+"42
+} 0
+"62 C:\Users\swg\MPLABXProjects\SUPLoriginalish\SUPL_PIC16.X\system.c
+[v _setupTimer1 setupTimer1 `(v  1 e 1 0 ]
+{
+"73
+} 0
+"12 C:\Users\swg\MPLABXProjects\SUPLoriginalish\SUPL_PIC16.X\interrupt.c
+[v _setupSysInterrupts setupSysInterrupts `(v  1 e 1 0 ]
+{
+"15
+} 0
+"10 C:\Users\swg\MPLABXProjects\SUPLoriginalish\SUPL_PIC16.X\spi.c
+[v _setupSPI setupSPI `(v  1 e 1 0 ]
+{
+"13
+} 0
+"25 C:\Users\swg\MPLABXProjects\SUPLoriginalish\SUPL_PIC16.X\pwm.c
+[v _setupPWM setupPWM `(v  1 e 1 0 ]
+{
+"33
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.36\sources\common\memset.c
+[v _memset memset `(*.39v  1 e 1 0 ]
+{
+"15
+[v memset@p p `*.39uc  1 a 2 19 ]
+"8
+[v memset@p1 p1 `*.39v  1 p 2 13 ]
+[v memset@c c `i  1 p 2 15 ]
+[v memset@n n `ui  1 p 2 17 ]
+"22
+} 0
+"10 C:\Users\swg\MPLABXProjects\SUPLoriginalish\SUPL_PIC16.X\i2c.c
+[v _setupI2C setupI2C `(v  1 e 1 0 ]
+{
+"13
+[v setupI2C@brg brg `us  1 a 2 15 ]
+"26
+} 0
+"22 C:\Users\swg\MPLABXProjects\SUPLoriginalish\SUPL_PIC16.X\system.c
+[v _setupGPIO setupGPIO `(v  1 e 1 0 ]
+{
+"53
+} 0
+"9 C:\Users\swg\MPLABXProjects\SUPLoriginalish\SUPL_PIC16.X\adc.c
+[v _setupADC setupADC `(v  1 e 1 0 ]
+{
+"12
+} 0
+"17 C:\Users\swg\MPLABXProjects\SUPLoriginalish\SUPL_PIC16.X\interrupt.c
+[v _ISR ISR `II(v  1 e 1 0 ]
+{
+"31
+} 0
+"64
+[v _uartISR uartISR `(v  1 e 1 0 ]
+{
+"85
+} 0
+"68 C:\Users\swg\MPLABXProjects\SUPLoriginalish\SUPL_PIC16.X\uart.c
+[v _clearUARTbuffer clearUARTbuffer `(v  1 e 1 0 ]
+{
+"75
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.36\sources\common\memset.c
+[v i1_memset memset `(*.1v  1 e 1 0 ]
+{
+[v i1memset@p memset `*.39uc  1 a 2 6 ]
+[v i1memset@p1 p1 `*.39v  1 p 2 0 ]
+[v i1memset@c c `i  1 p 2 2 ]
+[v i1memset@n n `ui  1 p 2 4 ]
+"22
+} 0
+"42 C:\Users\swg\MPLABXProjects\SUPLoriginalish\SUPL_PIC16.X\interrupt.c
+[v _timer0ISR timer0ISR `(v  1 e 1 0 ]
+{
+"54
+} 0
+"80 C:\Users\swg\MPLABXProjects\SUPLoriginalish\SUPL_PIC16.X\pwm.c
+[v _pwm_interrupt_manager pwm_interrupt_manager `(v  1 e 1 0 ]
+{
+"85
+[v pwm_interrupt_manager@ports ports `[5]*.39uc  1 a 10 0 ]
+"83
+[v pwm_interrupt_manager@i i `uc  1 a 1 11 ]
+[v pwm_interrupt_manager@j j `uc  1 a 1 10 ]
+"82
+[v pwm_interrupt_manager@cnt cnt `uc  1 s 1 cnt ]
+"83
+[v pwm_interrupt_manager@F6704 F6704 `[5]*.39uc  1 s 10 F6704 ]
+"111
+} 0

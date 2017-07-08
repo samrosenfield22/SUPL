@@ -45,3 +45,6 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# For now, let's ignore all the PIC32 code
+SUPL_PIC32.X
